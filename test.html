@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: relative;
+            animation: moveAnimation 2s ease-in-out infinite alternate;
+            cursor: pointer;
+        }
+
+        @keyframes moveAnimation {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(200px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="animated-box"></div>
+
+    <script>
+        // Adding interactivity with JavaScript
+        var animatedBox = document.getElementById('animated-box');
+
+        animatedBox.addEventListener('mouseover', function() {
+            this.style.backgroundColor = '#e74c3c'; // Change color on hover
+        });
+
+        animatedBox.addEventListener('mouseout', function() {
+            this.style.backgroundColor = '#3498db'; // Restore original color on mouseout
+        });
+    </script>
+
+</body>
+</html>

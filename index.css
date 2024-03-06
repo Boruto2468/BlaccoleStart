@@ -1,0 +1,103 @@
+@font-face{
+    font-family: maisonNeue;
+    src:url(/Fonts/maison-neue/MaisonNeueThin.otf);
+    font-weight:100;
+}
+
+@font-face{
+    font-family: maisonNeue;
+    src:url(/Fonts/maison-neue/MaisonNeueMedium.otf);
+    font-weight:200;
+}
+
+@font-face{
+    font-family: maisonNeue;
+    src:url(/Fonts/maison-neue/MaisonNeueLight.otf);
+    font-weight:300;
+}
+
+@font-face{
+    font-family: maisonNeue;
+    src:url(/Fonts/maison-neue/MaisonNeueExtraThin.otf);
+    font-weight:400;
+}
+
+@font-face{
+    font-family: maisonNeue;
+    src:url(/Fonts/maison-neue/MaisonNeueBlack.otf);
+    font-weight:500;
+}
+
+@font-face {
+    font-family: maisonNeue;
+    src:url(/Fonts/maison-neue/MaisonNeueBold.otf);
+    font-weight:600;
+}
+
+@font-face{
+    font-family: maisonNeue;
+    src:url(/Fonts/maison-neue/MaisonNeueBook.otf);
+    font-weight:700;
+}
+  
+@font-face{
+    font-family: maisonNeue;
+    src:url(/Fonts/maison-neue/MaisonNeueBold.otf);
+    font-weight:bold;
+}
+
+@font-face{
+    font-family: maisonNeue;
+    src:url(/Fonts/maison-neue/MaisonNeueExtendedExtraBold.otf);
+    font-weight:bolder
+}
+
+body{
+    font-family: maisonNeue;
+}
+
+#nav-bar{
+    transition: top 0.3s ease-in-out;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    padding: 2em;
+}
+
+/* for videos */
+
+.mySlides {
+    float: left;
+    width: 16.66%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .negative {
+    background-color: #e74c3c;
+}

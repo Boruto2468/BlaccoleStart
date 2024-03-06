@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link href="/style.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Desktop Metal. Define the future. Make it real. | Desktop Metal</title>
+</head>
+<body class="bg-[#eee] max-w-[1400px]">
+
+    <div id="nav-bar" class="fixed w-full">
+        <header class="bg-[#333] flex justify-end py-[15px]">
+            <button class="text-white flex font-thin">TEAM DM</button>
+            <button><img src="./Icons/ellipsis-svg.svg" class="w-[20px] mx-[1vw]"></button>
+        </header>
+
+        <nav class="flex py-5 mx-[5vw] justify-between bg-[#eee]">
+            <a href="#home" class="flex font-extrabold">
+                <img src="" alt="DM" class="">Desktop Metal
+            </a>
+            <div>
+                <a href="#" id="home" class="font-thin">Platforms</a>
+                <a href="#" id="about" class="font-thin">Materials</a>
+                <a href="#" id="services" class="font-thin">Software</a>
+                <a href="#" id="contact" class="font-thin">Learn</a>
+                <a href="" class="font-thin">Investors</a>
+                <a href="" class="font-thin">About</a>
+            </div>
+            
+            <button class="p-1 px-4 bg-[#FF3333] text-white font-thin rounded-3xl">Connect</button>
+        </nav>
+        <div id="nav-line" class="border-b-2 border-black mb-20 hidden"></div>
+    </div>
+    
+
+    <section id="content" class="p-12 pt-[25vw]">
+        <h2 class="text-[6vw] w-[80vw] text-[#fb4a4a] leading-tight font-semibold">Desktop Metal&#174
+            <span class="text-gray-900" style="font-weight: 100;">Exists to Deliver on the Vision of 3D Printing: Mass Production</span></h2>
+    </section>
+
+    <section class="relative cursor-pointer pb-[500px]">
+        <div class="mySlides">
+        <div class="numbertext"></div>
+            <video src="/Videos/If_ChatGPT_Was_Asian(360p).mp4" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext"></div>
+            <video src="/Videos/If_ChatGPT_Was_Asian_2(480p).mp4" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext"></div>
+            <video src="/Videos/When_Asian_Kids_Decide_Their_Own_Career(720p).mp4" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext"></div>
+            <video src="/Videos/When_it's_Black_Friday(720p).mp4" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+    </section>
+    <section class="pl-[3vw] w-full">
+        <p class="text-gray-800 text-[2.5vw] font-extralight pb-10">Key Stats</p>
+        <div class="border-b-[.1vw] border-gray-400"></div>
+        <div class="flex">
+            <div class="w-1/2">
+                <p class="pt-6 font-thin">_Vision Matters</p>
+            </div>
+            <div class="border-l-[.1vw] border-gray-400 "></div>
+            <div class="w-1/2">
+                <p class="pt-6 pb-8 pl-5 w-[35vw] text-gray-500 font-thin">Our Team DM portfolio of 3D printers, materials, applications, and technologies was carefully curated to drive the future of Additive Manufacturing 2.0. 
+                Our team is passionate in the belief that production 3D printing can produce more advanced parts and products that can truly change the world at high, meaningful volumes.</p>
+            </div>
+        </div>
+        <div class="border-b-[.1vw] border-gray-400 "></div>
+        <div class="text-[6vw] text-gray-800 font-extralight leading-snug flex">
+            <div class="py-32 px-10">
+                <p class="text-center">6,000+</p>
+                <p>Customers</p>
+            </div>
+            <div class="border-l-[.1vw] border-gray-400 "></div>
+            <div class="py-32 px-10">
+                <p class="text-center">650+</p>
+                <p>Patents</p>
+            </div>
+            <div class="border-l-[.1vw] border-gray-400 "></div>
+            <div class="py-32 px-10">
+                <p class="text-center">250+</p>
+                <p>Materials</p>
+            </div>
+        </div>
+        <div class="border-b-[.1vw] border-gray-400 "></div>
+    </section>
+    
+    <section>
+        <div>
+            <p class="font-extralight text-gray-800 text-[2.5vw] mb-[3vw] mt-[5vw]">Our Portfolio</p>
+        </div>
+        <div class="border-b-[.1vw] border-gray-400 "></div>
+        <button class="py-[80px] ">
+            <div class="grid grid-cols-4" style="grid-template-columns: 5vw 30vw 50vw 10vw;">
+                <p class="text-[#fb4a4a] my-auto">_01</p>
+                <p class="font-extralight text-gray-800 text-[2.5vw] my-auto">Platforms</p>
+                <p class="font-extralight text-gray-600 text-left w-[420px] mx-auto">We're investing in area-wide 3D printing platforms, 
+                    such as Binder Jetting (BJT) and Digital Light Processing (DLP), that we believe offer the speeds and costs required for AM 2.0</p>
+                <div id="toggleButton" class="buttonplus border border-[#FF3333] rounded-full text-[#FF3333] w-[40px] h-[40px] my-auto mx-auto text-[27px] font-thin hover:bg-[#FF3333] hover:text-white" 
+                style="transition: background-color 0.3s ease-in-out;">+</div>
+            </div>
+            
+        </button>
+        <div class="border-b-[.1vw] border-gray-400 "></div>
+        <button class="py-[80px] ">
+            <div class="grid grid-cols-4" style="grid-template-columns: 5vw 30vw 50vw 10vw;">
+                <p class="text-[#fb4a4a] my-auto">_02</p>
+                <p class="font-extralight text-gray-800 text-[2.5vw] my-auto">Mateirals</p>
+                <p class="font-extralight text-gray-600 text-left w-[420px] mx-auto">Our portfolio of materials spans virtually every category, from metal and polymers to ceramics and composites, 
+                    with premium innovations such as DuraChain™ 2-in-1 pot resins and Flexcera™. We're also driving upcycled materials such as wood into production.</p>
+                <div id="toggleButton" class="border border-[#FF3333] rounded-full text-[#FF3333] w-[40px] h-[40px] my-auto mx-auto text-[27px] font-thin hover:bg-[#FF3333] hover:text-white" 
+                style="transition: background-color 0.3s ease-in-out;">+</div>
+            </div>
+            
+        </button>
+        <div class="border-b-[.1vw] border-gray-400 "></div>
+       <button class="py-[80px] ">
+            <div class="grid grid-cols-4" style="grid-template-columns: 5vw 30vw 50vw 10vw;">
+                <p class="text-[#fb4a4a] my-auto">_03</p>
+                <p class="font-extralight text-gray-800 text-[2.5vw] my-auto">Applications & Technologies</p>
+                <p class="font-extralight text-gray-600 text-left w-[420px] mx-auto">By pairing area-wide printers and the right materials with specific applications, we're going to change the world.</p>
+                <div id="toggleButton" class="border border-[#FF3333] rounded-full text-[#FF3333] w-[40px] h-[40px] my-auto mx-auto text-[27px] font-thin hover:bg-[#FF3333] hover:text-white" 
+                style="transition: background-color 0.3s ease-in-out;">+</div>
+            </div>
+            
+        </button>
+        <div class="border-b-[.1vw] border-gray-400 "></div>
+    </section>
+    <section class="p-12">
+        <p class="text-gray-800 text-3xl font-extralight pb-10">Learn more</p>
+        <div class="border-b-[.1vw] border-gray-400"></div>
+        <div class="flex">
+            <div class="w-1/2">
+                <p class="pt-6 font-thin">_Resources</p>
+            </div>
+            <div class="border-l-[.1vw] border-gray-400 "></div>
+            <div class="w-1/2">
+                <p class="pt-6 pb-8 pl-5 w-[38vw] text-gray-500 font-thin">Learn more about Desktop Metal metal 3D printing systems, additive manufacturing applications, and case studies in our Resource Center</p>
+            </div>
+        </div>
+        <div class="border-b-[.1vw] border-gray-400 "></div>
+        <div class="flex mt-[3vw]">
+            <div>
+                <img src="./Images/Metal_Binder_Jet_Guide.jpg" alt="">
+                <p>The Ultimate Guide to Laser-Free Metal 3D Printing with Binder Jetting Technology</p>
+                <p>This 40-page guide is the most authoritative introduction to date on metal binder jetting — the most promising ASTM-recognized 3D printing technology for the mass production of metal parts and products. 
+                    This guide contains a comprehensive overview of high-speed 3D printing of metals without a laser. Explore why binder jetting holds the keys to enabling the next era of Additive Manufacturing 2.0, 
+                    which can unlock the innovation, agility and sustainability benefits of 3D printing in meaningful high volumes.</p>
+                <div class="border-b-[.1vw] border-black"></div>
+                <div>
+                    <p>_Ebooks</p>
+                    <div class="">&#8594</div>
+                </div>    
+            </div>
+            <div class="border-l-[.1vw] border-gray-400 mx-[2vw]"></div>
+            <div>
+                <img src="./Images/Azoth_Webinar_1440x960.jpg" alt="">
+                <p>How to Implement 3D Printing for Production: Azoth3D Shares Their Experience</p>
+                <p>Azoth believes metal binder jet technology is the ideal 3D printing method for manufacturing small, complex metal components and helps manufacturers create efficient digital inventories through its Take One Make One (TOMO) strategy. 
+                    Its team helps manufacturers plan for a component's lifecycle and find where 3D printing qualified parts on-demand makes sense—from prototype and production to replacement and legacy part strategies.</p>
+                <div class="border-b-[.1vw] border-black"></div>
+                <div>
+                    <p>_Webinar</p>
+                    <div class="">&#8592</div>
+                </div>    
+            </div>
+        </div>
+        
+    </section>
+    <footer class="bg-[#333] text-white text-center p-5">
+        &copy; 2024 Company Name. All rights reserved.
+    </footer>
+
+    
+
+</body>
+</html>
