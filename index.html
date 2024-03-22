@@ -7,11 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./index.css">
     <link href="/style.css" rel="stylesheet">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Desktop Metal. Define the future. Make it real. | Desktop Metal</title>
 </head>
-<body class="bg-[#eee] max-w-[2000px]">
+<body class="bg-[#f3f5f8] max-w-[2000px]">
 
     <div id="nav-bar" class="fixed w-full">
         <header class="bg-[#333] flex justify-end py-[15px]">
@@ -19,9 +19,10 @@
             <button><img src="./Icons/ellipsis-svg.svg" class="w-[20px] mx-[1vw]"></button>
         </header>
 
-        <nav class="flex py-5 mx-[5vw] justify-between bg-[#eee]">
+        <nav class="flex py-5 mx-[5vw] justify-between bg-[#f3f5f8]">
             <a href="#home" class="flex font-extrabold">
-                <img src="" alt="DM" class="">Desktop Metal
+                <img src="/Images/dm_logo.png" class="w-[60px]">
+                <p>Desktop Metal</p>
             </a>
             <div>
                 <a href="#" id="home" class="font-thin">Platforms</a>
@@ -43,31 +44,21 @@
             <span class="text-gray-900" style="font-weight: 100;">Exists to Deliver on the Vision of 3D Printing: Mass Production</span></h2>
     </section>
 
-    <section class="relative cursor-pointer pb-[500px]">
-        <div class="mySlides">
-        <div class="numbertext"></div>
-            <video src="/Videos/If_ChatGPT_Was_Asian(360p).mp4" style="width:100%">
+    <section class="slider flex w-full h-1/2 overflow-hidden cursor-pointer pb-[100px]">
+        <div class="slide active relative flex-1">
+            <video src="/Videos/If_ChatGPT_Was_Asian(360p).mp4" class="opacity-100 w-full h-full object-cover transition-opacity duration-[0.5s] ease-in-out" autoplay loop muted>
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext"></div>
-            <video src="/Videos/If_ChatGPT_Was_Asian_2(480p).mp4" style="width:100%">
+        <div class="slide relative flex-1">    
+            <video src="/Videos/If_ChatGPT_Was_Asian_2(480p).mp4" class="w-full h-full object-cover opacity-50 transition-opacity duration-[0.5s] ease-in-out" muted>
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext"></div>
-            <video src="/Videos/When_Asian_Kids_Decide_Their_Own_Career(720p).mp4" style="width:100%">
+        <div class="slide relative flex-1">    
+            <video src="/Videos/When_Asian_Kids_Decide_Their_Own_Career(720p).mp4" class="w-full h-full object-cover opacity-50 transition-opacity duration-[0.5s] ease-in-out" muted>
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext"></div>
-            <video src="/Videos/When_it's_Black_Friday(720p).mp4" style="width:100%">
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <!-- Image text -->
-        <div class="caption-container">
-            <p id="caption"></p>
+        <div class="slide relative flex-1">    
+            <video src="/Videos/When_it's_Black_Friday(720p).mp4" class="w-full h-full object-cover opacity-50 transition-opacity duration-[0.5s] ease-in-out" muted>
         </div>
     </section>
     <section class="pl-[3vw] w-full">
@@ -252,6 +243,17 @@
                 <p class="text-[#a9b0b8]">Office-friendly production of metal parts and prototypes.</p>
             </div>    
         </div>
+        <img src="/Images/routing-sales-bg.jpg" alt="">
+        <div class="flex justify-between mx-10">
+            <input type="email" placeholder="Stay connected. Join our newsletter." class="bg-none">
+            <div class="text-white font-extralight bg-[#FF3333] rounded-full w-[30px] h-[30px]">&#8594</div>
+        </div>
+        <div class="bg-white border-b-[.3vw] my-5"></div>
+        <div class="flex">
+            <input type="checkbox" class="bg-slate-300">
+            <p class="font-extralight text-gray-500 text-[10px]">I agree to receive other communications from Desktop Metal.</p>
+        </div>
+        
     </section>
     <section>
         <img src="" alt="">
