@@ -72,32 +72,81 @@ section {
 
 /* for videos */
 
-.mySlides {
-    float: left;
-    width: 16.66%;
+.container {
+    margin: 0 auto;
+    width: 60%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
   }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  .slides {
+    display: flex;
+    height: 100%;
+  }
+  .slide {
+    min-width: 100%;
+    position: relative;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
+  .slide-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #next-btn,
+  #prev-btn {
+    cursor: pointer;
+    background: transparent;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    color: white;
+  }
+  #next-btn:focus,
+  #prev-btn:focus {
+    outline: none;
+  }
+  .slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    font-size: 60px;
+    color: white;
   }
   
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
 
-  .negative {
-    background-color: #e74c3c;
+/* .slider {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
 }
+
+.slide {
+    flex: 1;
+    position: relative;
+}
+
+.slide video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide.active video {
+    opacity: 1;
+}
+
+.slide video {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+} */

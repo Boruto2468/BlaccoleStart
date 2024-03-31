@@ -19,12 +19,12 @@
             <button><img src="./Icons/ellipsis-svg.svg" class="w-[20px] mx-[1vw]"></button>
         </header>
 
-        <nav class="flex py-5 mx-[5vw] justify-between bg-[#f3f5f8]">
+        <nav class="flex py-5 mx-[5vw] justify-between bg-[#f3f5f8] min-[800px]:visible max-[799px]:hidden">
             <a href="#home" class="flex font-extrabold">
                 <img src="/Images/dm_logo.png" class="w-[60px]">
                 <p>Desktop Metal</p>
             </a>
-            <div>
+            <div class="">
                 <a href="#" id="home" class="font-thin">Platforms</a>
                 <a href="#" id="about" class="font-thin">Materials</a>
                 <a href="#" id="services" class="font-thin">Software</a>
@@ -35,6 +35,22 @@
             
             <button class="p-1 px-4 bg-[#FF3333] text-white font-thin rounded-3xl">Connect</button>
         </nav>
+        <!-- For Mobile -->
+        <div class="flex justify-between">
+            <img src="/Images/dm_logo.png" class="w-[60px] min-[800px]:hidden max-[799px]:visible">
+            <nav class="bg-[#f3f5f8] min-[800px]:hidden max-[799px]:visible">
+                <div id="mySidepanel" class="h-[250px] w-0 fixed z-[1] t-0 left-0 overflow-x-hidden transition-[0.5s]">
+                    <a href="javascript:void(0)" class="closebtn absolute t-0 right-[25px] ml-[50px]" onclick="closeNav()">&times;</a>
+                    <a href="#" id="home" class="font-thin transition-[0.3s] block">Platforms</a>
+                    <a href="#" id="about" class="font-thin transition-[0.3s] block">Materials</a>
+                    <a href="#" id="services" class="font-thin transition-[0.3s] block">Software</a>
+                    <a href="#" id="contact" class="font-thin transition-[0.3s] block">Learn</a>
+                    <a href="" class="font-thin transition-[0.3s] block">Investors</a>
+                    <a href="" class="font-thin transition-[0.3s] block">About</a>
+                </div>
+            </nav>
+            <button class="openbtn min-[800px]:hidden max-[799px]:visible items-end flex" onclick="openNav()">&#9776;</button>
+        </div>
         <div id="nav-line" class="border-b-2 border-black mb-20 hidden"></div>
     </div>
     
@@ -43,24 +59,52 @@
         <h2 class="text-[6vw] w-[80vw] text-[#fb4a4a] leading-tight font-semibold">Desktop Metal&#174
             <span class="text-gray-900" style="font-weight: 100;">Exists to Deliver on the Vision of 3D Printing: Mass Production</span></h2>
     </section>
+<!-- Video code -->
 
-    <section class="slider flex w-full h-1/2 overflow-hidden cursor-pointer pb-[100px]">
-        <div class="slide active relative flex-1">
-            <video src="/Videos/If_ChatGPT_Was_Asian(360p).mp4" class="opacity-100 w-full h-full object-cover transition-opacity duration-[0.5s] ease-in-out" autoplay loop muted>
+<div class="container">
+    <div class="slides">
+      <div class="slide">
+        <video src="/Videos/If_ChatGPT_Was_Asian(360p).mp4" alt="" autoplay muted/>
+        <div class="slide-content">
+          <h1>This is Heading</h1>
+        </div>
+      </div>
+      <div class="slide">
+        <video src="/Videos/If_ChatGPT_Was_Asian_2(480p).mp4" alt="" autoplay muted/>
+      </div>
+      <div class="slide">
+        <video src="/Videos/When_Asian_Kids_Decide_Their_Own_Career(720p).mp4" alt="" autoplay muted/>
+      </div>
+      <div class="slide">
+        <video src="/Videos/When_it's_Black_Friday(720p).mp4" alt="" autoplay muted/>
+      </div>
+    </div>
+    <div class="slide-controls">
+      <button id="prev-btn">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button id="next-btn">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+    <!-- <section class="slider pb-[100px]">
+        <div class="slide active">
+            <video src="/Videos/If_ChatGPT_Was_Asian(360p).mp4" autoplay muted>
         </div>
 
-        <div class="slide relative flex-1">    
-            <video src="/Videos/If_ChatGPT_Was_Asian_2(480p).mp4" class="w-full h-full object-cover opacity-50 transition-opacity duration-[0.5s] ease-in-out" muted>
+        <div class="slide">    
+            <video src="/Videos/If_ChatGPT_Was_Asian_2(480p).mp4" autoplay muted>
         </div>
 
-        <div class="slide relative flex-1">    
-            <video src="/Videos/When_Asian_Kids_Decide_Their_Own_Career(720p).mp4" class="w-full h-full object-cover opacity-50 transition-opacity duration-[0.5s] ease-in-out" muted>
+        <div class="slide">    
+            <video src="/Videos/When_Asian_Kids_Decide_Their_Own_Career(720p).mp4" autoplay muted>
         </div>
 
-        <div class="slide relative flex-1">    
-            <video src="/Videos/When_it's_Black_Friday(720p).mp4" class="w-full h-full object-cover opacity-50 transition-opacity duration-[0.5s] ease-in-out" muted>
+        <div class="slide">    
+            <video src="/Videos/When_it's_Black_Friday(720p).mp4" autoplay muted>
         </div>
-    </section>
+    </section> -->
     <section class="pl-[3vw] w-full">
         <p class="text-gray-800 text-[2.5vw] font-extralight pb-10 text-left">Key Stats</p>
         <div class="border-b-[.1vw] border-gray-400"></div>
@@ -75,7 +119,7 @@
             </div>
         </div>
         <div class="border-b-[.1vw] border-gray-400 "></div>
-        <div class="text-[6vw] text-gray-800 font-extralight leading-snug flex">
+        <div class="text-[50px] text-gray-800 font-extralight leading-snug flex ">
             <div class="py-32 px-10">
                 <p class="text-center">6,000+</p>
                 <p>Customers</p>
@@ -243,20 +287,25 @@
                 <p class="text-[#a9b0b8]">Office-friendly production of metal parts and prototypes.</p>
             </div>    
         </div>
-        <img src="/Images/routing-sales-bg.jpg" alt="">
-        <div class="flex justify-between mx-10">
-            <input type="email" placeholder="Stay connected. Join our newsletter." class="bg-none">
-            <div class="text-white font-extralight bg-[#FF3333] rounded-full w-[30px] h-[30px]">&#8594</div>
-        </div>
-        <div class="bg-white border-b-[.3vw] my-5"></div>
-        <div class="flex">
-            <input type="checkbox" class="bg-slate-300">
-            <p class="font-extralight text-gray-500 text-[10px]">I agree to receive other communications from Desktop Metal.</p>
+        <div class="relative">
+            <img src="/Images/routing-sales-bg.jpg" class="z-[-1]">
+            <div class="flex justify-between mx-10">
+                <input type="email" placeholder="Stay connected. Join our newsletter." class="w-full text-white font-extralight bg-transparent absolute top-[50%]">
+                <div class="text-white font-extralight bg-[#FF3333] rounded-full w-[30px] h-[30px] absolute top-[50%] left-[90%]">&#8594</div>
+            </div>
+            <div class="flex">
+                <div class="bg-white border-b-[12px] my-5 absolute top-[50%]"></div>
+            </div>
+            <div class="flex">
+                <input type="checkbox" class="bg-slate-300 absolute top-[90%]">
+                <p class="font-extralight text-gray-500 text-[10px] absolute top-[90%]">I agree to receive other communications from Desktop Metal.</p>
+            </div>
         </div>
         
     </section>
     <section>
-        <img src="" alt="">
+        <img src="/Images/dm_logo.png" alt="">
+        <input type="email" placeholder="Enter your email to join our newsletter*">
     </section>
     
 
