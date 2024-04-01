@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Desktop Metal. Define the future. Make it real. | Desktop Metal</title>
 </head>
-<body class="bg-[#f3f5f8] max-w-[2000px]">
+<body class="bg-[#f3f5f8] m-0 p-0 overflow-x-hidden min-w-[100vw]">
 
     <div id="nav-bar" class="fixed w-full">
         <header class="bg-[#333] flex justify-end py-[15px]">
@@ -19,18 +19,18 @@
             <button><img src="./Icons/ellipsis-svg.svg" class="w-[20px] mx-[1vw]"></button>
         </header>
 
-        <nav class="flex py-5 mx-[5vw] justify-between bg-[#f3f5f8] min-[800px]:visible max-[799px]:hidden">
+        <nav class="flex py-5 px-[95px] justify-between bg-[#f3f5f8] bg-cover min-[800px]:visible max-[799px]:hidden">
             <a href="#home" class="flex font-extrabold">
                 <img src="/Images/dm_logo.png" class="w-[60px]">
                 <p>Desktop Metal</p>
             </a>
             <div class="">
-                <a href="#" id="home" class="font-thin">Platforms</a>
-                <a href="#" id="about" class="font-thin">Materials</a>
-                <a href="#" id="services" class="font-thin">Software</a>
-                <a href="#" id="contact" class="font-thin">Learn</a>
-                <a href="" class="font-thin">Investors</a>
-                <a href="" class="font-thin">About</a>
+                <a href="#" id="home" class="font-thin mr-[50px]">Platforms</a>
+                <a href="#" id="about" class="font-thin mr-[50px]">Materials</a>
+                <a href="#" id="services" class="font-thin mr-[50px]">Software</a>
+                <a href="#" id="contact" class="font-thin mr-[50px]">Learn</a>
+                <a href="" class="font-thin mr-[100px]">Investors</a>
+                <a href="" class="font-thin mr-[100px]">About</a>
             </div>
             
             <button class="p-1 px-4 bg-[#FF3333] text-white font-thin rounded-3xl">Connect</button>
@@ -55,7 +55,7 @@
     </div>
     
 
-    <section id="content" class="p-12 pt-[25vw]">
+    <section id="content" class="p-[20px] pt-[25vw]">
         <h2 class="text-[6vw] w-[80vw] text-[#fb4a4a] leading-tight font-semibold">Desktop Metal&#174
             <span class="text-gray-900" style="font-weight: 100;">Exists to Deliver on the Vision of 3D Printing: Mass Production</span></h2>
     </section>
@@ -65,9 +65,6 @@
     <div class="slides">
       <div class="slide">
         <video src="/Videos/If_ChatGPT_Was_Asian(360p).mp4" alt="" autoplay muted/>
-        <div class="slide-content">
-          <h1>This is Heading</h1>
-        </div>
       </div>
       <div class="slide">
         <video src="/Videos/If_ChatGPT_Was_Asian_2(480p).mp4" alt="" autoplay muted/>
@@ -88,23 +85,7 @@
       </button>
     </div>
   </div>
-    <!-- <section class="slider pb-[100px]">
-        <div class="slide active">
-            <video src="/Videos/If_ChatGPT_Was_Asian(360p).mp4" autoplay muted>
-        </div>
-
-        <div class="slide">    
-            <video src="/Videos/If_ChatGPT_Was_Asian_2(480p).mp4" autoplay muted>
-        </div>
-
-        <div class="slide">    
-            <video src="/Videos/When_Asian_Kids_Decide_Their_Own_Career(720p).mp4" autoplay muted>
-        </div>
-
-        <div class="slide">    
-            <video src="/Videos/When_it's_Black_Friday(720p).mp4" autoplay muted>
-        </div>
-    </section> -->
+    
     <section class="pl-[3vw] w-full">
         <p class="text-gray-800 text-[2.5vw] font-extralight pb-10 text-left">Key Stats</p>
         <div class="border-b-[.1vw] border-gray-400"></div>
@@ -120,17 +101,17 @@
         </div>
         <div class="border-b-[.1vw] border-gray-400 "></div>
         <div class="text-[50px] text-gray-800 font-extralight leading-snug flex ">
-            <div class="py-32 px-10">
+            <div class="py-32 px-5">
                 <p class="text-center">6,000+</p>
                 <p>Customers</p>
             </div>
             <div class="border-l-[.1vw] border-gray-400 "></div>
-            <div class="py-32 px-10">
+            <div class="py-32 px-5">
                 <p class="text-center">650+</p>
                 <p>Patents</p>
             </div>
             <div class="border-l-[.1vw] border-gray-400 "></div>
-            <div class="py-32 px-10">
+            <div class="py-32 px-5">
                 <p class="text-center">250+</p>
                 <p>Materials</p>
             </div>
@@ -138,13 +119,13 @@
         <div class="border-b-[.1vw] border-gray-400 "></div>
     </section>
     
-    <section>
+    <section class="max-w-[1600px]">
         <div>
             <p class="font-extralight text-gray-800 text-[2.5vw] mb-[3vw] mt-[5vw]">Our Portfolio</p>
         </div>
         <div class="border-b-[.1vw] border-gray-400 "></div>
         <button class="py-[80px] ">
-            <div class="grid grid-cols-4" style="grid-template-columns: 5vw 30vw 50vw 10vw;">
+            <div class="grid grid-cols-4" style="grid-template-columns: 5vw 30vw 30vw 10vw;">
                 <p class="text-[#fb4a4a] my-auto">_01</p>
                 <p class="font-extralight text-gray-800 text-[2.5vw] my-auto">Platforms</p>
                 <p class="font-extralight text-gray-600 text-left w-[420px] mx-auto">We're investing in area-wide 3D printing platforms, 
@@ -156,9 +137,9 @@
         </button>
         <div class="border-b-[.1vw] border-gray-400 "></div>
         <button class="py-[80px] ">
-            <div class="grid grid-cols-4" style="grid-template-columns: 5vw 30vw 50vw 10vw;">
+            <div class="grid grid-cols-4" style="grid-template-columns: 5vw 30vw 30vw 10vw;">
                 <p class="text-[#fb4a4a] my-auto">_02</p>
-                <p class="font-extralight text-gray-800 text-[2.5vw] my-auto">Mateirals</p>
+                <p class="font-extralight text-gray-800 text-[2.5vw] my-auto">Materials</p>
                 <p class="font-extralight text-gray-600 text-left w-[420px] mx-auto">Our portfolio of materials spans virtually every category, from metal and polymers to ceramics and composites, 
                     with premium innovations such as DuraChain™ 2-in-1 pot resins and Flexcera™. We're also driving upcycled materials such as wood into production.</p>
                 <div id="toggleButton" class="border border-[#FF3333] rounded-full text-[#FF3333] w-[40px] h-[40px] my-auto mx-auto text-[27px] font-thin hover:bg-[#FF3333] hover:text-white" 
@@ -168,7 +149,7 @@
         </button>
         <div class="border-b-[.1vw] border-gray-400 "></div>
        <button class="py-[80px] ">
-            <div class="grid grid-cols-4" style="grid-template-columns: 5vw 30vw 50vw 10vw;">
+            <div class="grid grid-cols-4" style="grid-template-columns: 5vw 30vw 30vw 10vw;">
                 <p class="text-[#fb4a4a] my-auto">_03</p>
                 <p class="font-extralight text-gray-800 text-[2.5vw] my-auto">Applications & Technologies</p>
                 <p class="font-extralight text-gray-600 text-left w-[420px] mx-auto">By pairing area-wide printers and the right materials with specific applications, we're going to change the world.</p>
@@ -188,7 +169,7 @@
             </div>
             <div class="border-l-[.1vw] border-gray-400 "></div>
             <div class="w-1/2">
-                <p class="pt-6 pb-8 pl-5 w-[38vw] text-gray-500 font-thin">Learn more about Desktop Metal metal 3D printing systems, additive manufacturing applications, and case studies in our Resource Center</p>
+                <p class="pt-6 pb-8 pl-5 w-[500px] text-gray-500 font-thin">Learn more about Desktop Metal metal 3D printing systems, additive manufacturing applications, and case studies in our Resource Center</p>
             </div>
         </div>
         <div class="border-b-[.1vw] border-gray-400 "></div>
@@ -303,11 +284,78 @@
         </div>
         
     </section>
-    <section>
-        <img src="/Images/dm_logo.png" alt="">
-        <input type="email" placeholder="Enter your email to join our newsletter*">
+    <section class="flex justify-between mt-[100px]">
+        <div>
+            <img src="/Images/dm_logo.png" alt="">
+            <div class="mt-[100px]">
+                <input type="email" class="border-[.1px] border-black py-[8px] px-[20px] w-[450px]" placeholder="Enter your email to join our newsletter* " style="::placeholder{color:black; opacity: 1;}">
+                <div class="flex">
+                    <input type="checkbox" class="mr-[5px] w-[20px]">
+                    <p class="font-extralight text-gray-400 w-[300px] mt-[19px]">I agree to receive other communications from Desktop Metal.*</p>
+                </div>
+            </div>   
+        </div>
+        <div class="grid grid-cols-4 font-extralight mr-[100px] mb-[200px]" style="grid-template-columns: 200px 200px 200px 200px;">
+            <div>
+                <p class="text-gray-500 mb-[50px]">Products</p>
+                <div class="grid gap-2">
+                    <a href="">Production System</a>
+                    <a href="">X-Series</a>
+                    <a href="">Shop Sytem</a>
+                    <a href="">Studio System</a>
+                    <a href="">Knowledge Base</a>
+                    <a href="">Support</a>
+                </div>
+            </div>
+            <div>
+                <p class="text-gray-500 mb-[50px]">Industries</p>
+                <div class="grid gap-2">
+                    <a href="">Automotive</a>
+                    <a href="">Consumer</a>
+                    <a href="">Heavy Industry</a>
+                    <a href="">Tooling</a>
+                    <a href="">Machine Design</a>
+                    <a href="">Education</a>
+                </div class="grid">
+            </div>
+            <div>
+                <p class="text-gray-500 mb-[50px]">Company</p>
+                <div class="grid gap-2">
+                    <a href="">About Us</a>
+                    <a href="">Careers</a>
+                    <a href="">Press</a>
+                    <a href="">Contact</a>
+                    <a href="">Events</a>
+                    <a href="">Become a reseller</a>
+                </div>
+            </div>
+            <div>
+                <p class="text-gray-500 mb-[50px]">Social</p>
+                <div class="grid gap-2">
+                    <a href="">Twitter</a>
+                    <a href="">Instagram</a>
+                    <a href="">Youtube</a>
+                    <a href="">Facebook</a>
+                    <a href="">Linkedln</a>
+                </div>
+            </div>
+        </div>
     </section>
+    <div class="px-[25px]">
+        <div class="border-b-[.1vw] border-gray-400"></div>
+        <div class="flex">
+            <div class="w-1/2 grid font-thin py-[40px]">
+                <p class="">© 2022 Desktop Metal, Inc.</p>
+                <a href="">63 Third Avenue — Burlington, MA 01803</a>
+                <a href="">(978) 224.1244</a>
+                <a href="">Terms + Conditions / Privacy Policy</a>
+            </div>
+            <div class="border-l-[.1vw] border-gray-400 "></div>
+            <div class="w-1/2">
+            </div>
+        </div>
+        <div class="border-b-[.1vw] border-gray-400 mb-[100px]"></div>
+    </div>
     
-
 </body>
 </html>
