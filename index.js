@@ -99,21 +99,17 @@ prevBtn.addEventListener('click', moveToPreviousSlide);
 
 startSlide();
 
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-/* const autoSlideshow = () => {
-  const slides = document.querySelectorAll('.slide video')
-  const slideDelay = 6000
-  let currentSlide = 0
-
-  slides[currentSlide].classList.add('active')
-
-  const nextSlide = () => {
-      slides[currentSlide].classList.remove('active')
-      currentSlide = (currentSlide + 1) % slides.length
-      slides[currentSlide].classList.add('active')
-  }
-  console.log(nextSlide)
-  setInterval(nextSlide, slideDelay)
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
 }
-autoSlideshow()
-console.log(autoSlideshow); */

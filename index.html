@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./index.css">
     <link href="/style.css" rel="stylesheet">
     <script src="index.js" defer></script>
@@ -25,7 +24,30 @@
                 <p>Desktop Metal</p>
             </a>
             <div class="">
-                <a href="#" id="home" class="font-thin mr-[50px]">Platforms</a>
+                <div class="dropdown  mr-[50px]">
+                    <button class="dropbtn font-thin">Platforms</button>
+                        <div class="dropdown-content">  
+                          <div class="row">
+                            <div class="column">
+                              <h3>_Desktop Metal</h3>
+                              <a href="#">Production System™</a>
+                              <a href="#">X-Series</a>
+                              <a href="#">Shop System™</a>
+                              <a href="#">Studio System™</a>
+                              <a href="">Compare Metal Systems</a>
+                            </div>
+                            <div class="column">
+                              <h3>_Team DM™</h3>
+                              <a href="">Desktop Health</a>
+                              <a href="#">ETEC</a>
+                              <a href="#">ExOne</a>
+                              <a href="#">Figur</a>
+                              <a href="">Forust</a>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                
                 <a href="#" id="about" class="font-thin mr-[50px]">Materials</a>
                 <a href="#" id="services" class="font-thin mr-[50px]">Software</a>
                 <a href="#" id="contact" class="font-thin mr-[50px]">Learn</a>
@@ -64,16 +86,16 @@
 <div class="container">
     <div class="slides">
       <div class="slide">
-        <video src="/Videos/If_ChatGPT_Was_Asian(360p).mp4" alt="" autoplay muted/>
+        <video src="/Videos/Production-_System_Printing_WEB-A_1728x1080_1st_Video.mp4" alt="" loop autoplay muted/>
       </div>
       <div class="slide">
-        <video src="/Videos/If_ChatGPT_Was_Asian_2(480p).mp4" alt="" autoplay muted/>
+        <video src="/Videos/Shop_System_Launch_Video_10sec_Open_Only_16x10_1_2nd_Video.mp4" alt="" loop autoplay muted/>
       </div>
       <div class="slide">
-        <video src="/Videos/When_Asian_Kids_Decide_Their_Own_Career(720p).mp4" alt="" autoplay muted/>
+        <video src="/Videos/Studio_Fleet_Pullback_1728x1080_3rd_Video.mp4" alt="" loop autoplay muted/>
       </div>
       <div class="slide">
-        <video src="/Videos/When_it's_Black_Friday(720p).mp4" alt="" autoplay muted/>
+        <video src="/Videos/DesktopMetalWebTeaser_25sec_4th_Video.mp4" alt="" loop autoplay muted/>
       </div>
     </div>
     <div class="slide-controls">
@@ -88,82 +110,125 @@
     
     <section class="pl-[3vw] w-full">
         <p class="text-gray-800 text-[2.5vw] font-extralight pb-10 text-left">Key Stats</p>
-        <div class="border-b-[.1vw] border-gray-400"></div>
-        <div class="flex">
+        <div class="flex border-t-[.1vw] border-b-[.1vw] border-gray-400 mx-auto">
             <div class="w-1/2">
                 <p class="pt-6 font-thin">_Vision Matters</p>
             </div>
-            <div class="border-l-[.1vw] border-gray-400 "></div>
-            <div class="w-1/2">
-                <p class="pt-6 pb-8 pl-5 w-[35vw] text-gray-500 font-thin">Our Team DM portfolio of 3D printers, materials, applications, and technologies was carefully curated to drive the future of Additive Manufacturing 2.0. 
+            <div class="border-l-[.1vw] border-gray-400 ">
+                <p class="pt-6 pb-8 pl-5 w-[35vw] text-gray-500 font-thin">Our Team DM portfolio of 3D printers, materials, applications, 
+                    and technologies was carefully curated to drive the future of Additive Manufacturing 2.0. 
                 Our team is passionate in the belief that production 3D printing can produce more advanced parts and products that can truly change the world at high, meaningful volumes.</p>
             </div>
         </div>
-        <div class="border-b-[.1vw] border-gray-400 "></div>
-        <div class="text-[50px] text-gray-800 font-extralight leading-snug flex ">
-            <div class="py-32 px-5">
+        <div class="w-fit border-t-[.1vw] border-gray-400 border-b-[.1vw] text-[50px] text-gray-800 font-extralight leading-snug grid grid-cols-3" 
+        style="grid-template-columns: 400px 400px 400px;">
+            <div class="py-32 mx-auto px-[100px] border-r-[.1vw] border-gray-400">
                 <p class="text-center">6,000+</p>
                 <p>Customers</p>
             </div>
-            <div class="border-l-[.1vw] border-gray-400 "></div>
-            <div class="py-32 px-5">
+            <div class="py-32 mx-auto px-[150px] border-r-[.1vw] border-gray-400">
                 <p class="text-center">650+</p>
                 <p>Patents</p>
             </div>
-            <div class="border-l-[.1vw] border-gray-400 "></div>
-            <div class="py-32 px-5">
+            <div class="py-32 pl-[100px] mx-auto">
                 <p class="text-center">250+</p>
                 <p>Materials</p>
             </div>
         </div>
-        <div class="border-b-[.1vw] border-gray-400 "></div>
+
     </section>
     
     <section class="">
         <div>
             <p class="font-extralight text-gray-800 text-[2.5vw] mb-[3vw] mt-[5vw]">Our Portfolio</p>
         </div>
-        <div class="border-b-[.1vw] border-gray-400 "></div>
-        <button class="py-[80px] flex">
-            <div class="grid grid-cols-2" style="grid-template-columns: 5vw 30vw;">
-                <p class="text-[#fb4a4a] my-auto">_01</p>
-                <p class="font-extralight text-gray-800 text-[2.5vw] my-auto">Platforms</p>
-            </div>
-            <div class="grid grid-cols-2" style="grid-template-columns: 500px 10vw;">
-                <p class="font-extralight text-gray-600 text-left w-[420px] mx-auto">We're investing in area-wide 3D printing platforms, 
-                    such as Binder Jetting (BJT) and Digital Light Processing (DLP), that we believe offer the speeds and costs required for AM 2.0</p>
-                <div id="toggleButton" class="buttonplus border border-[#FF3333] rounded-full text-[#FF3333] w-[40px] h-[40px] my-auto mx-auto text-[27px] font-thin hover:bg-[#FF3333] hover:text-white" 
-                style="transition: background-color 0.3s ease-in-out;">+</div>
-            </div>
-            
-        </button>
-        <div class="border-b-[.1vw] border-gray-400 "></div>
-        <button class="py-[80px] flex">
+            <button class="accordion py-[80px] w-full flex border-t-[.1vw] border-gray-400">
+                <div class="grid grid-cols-2" style="grid-template-columns: 5vw 30vw;">
+                    <p class="text-[#fb4a4a] my-auto">_01</p>
+                    <p class="font-extralight text-gray-800 text-[2.5vw] my-auto">Platforms</p>
+                </div>
+                <div class="plusDiv grid grid-cols-2" style="grid-template-columns: 500px 10vw;">
+                    <p class="font-extralight text-gray-600 text-left w-[420px] mx-auto">We're investing in area-wide 3D printing platforms, 
+                        such as Binder Jetting (BJT) and Digital Light Processing (DLP), that we believe offer the speeds and costs required for AM 2.0</p>
+                    <div id="toggleButton" class="plus border border-[#FF3333] rounded-full text-[#FF3333] w-[40px] h-[40px] my-auto mx-auto text-[27px] font-thin"
+                    style="transition: background-color 0.3s ease-in-out;">+</div>
+                </div>
+            </button>
+                <div class="panel grid grid-cols-4 gap-8">
+                    <div class="font-extralight">
+                        <img src="/Images/Production-System-btn1-1st.png" class="bg-black">
+                        <p>Desktop Metal</p>
+                        <p>Founded in 2015 to make metal and carbon fiber 3D printing accessible to all engineers, designers, 
+                            medical professionals, and manufacturers. Most platforms are based on BJT.</p>
+                    </div>
+                    <div class="font-extralight">
+                        <img src="/Images/Desktop-Health-Einstein-btn1-2nd.png" class="bg-black">
+                        <p>Desktop Health</p>
+                        <p>Founded in 2021 to deliver 3D printing and biofabrication solutions to drive the advancement of personal healthcare. 
+                            Most platforms are based on DLP.</p>
+                    </div>
+                    <div class="font-extralight">
+                        <img src="/Images/X8K-btn1-3rd.png" class="bg-black">
+                        <p>ETEC</p>
+                        <p>Founded in 2002 to deliver industrial-grade polymer 3D printing solutions. All platforms are based on DLP.</p>
+                    </div>
+                    <div class="font-extralight">
+                        <img src="/Images/ExOne-S-Max-Flex-1-btn1-4th.png" class="bg-black">
+                        <p>ExOne</p>
+                        <p>Founded in 1995 to deliver industrial sand 3D printing solutions for foundries and tooling applications. 
+                            All platforms are based on BJT.</p>
+                    </div>
+                </div>
+        
+        <button class="accordion py-[80px] flex border-t-[.1vw] border-gray-400">
             <div class="grid grid-cols-2" style="grid-template-columns: 5vw 30vw;">
                 <p class="text-[#fb4a4a] my-auto">_02</p>
                 <p class="font-extralight text-gray-800 text-[2.5vw] my-auto">Materials</p>
             </div>
-            <div class="grid grid-cols-2" style="grid-template-columns: 500px 10vw;">
+            <div class="plusDiv grid grid-cols-2" style="grid-template-columns: 500px 10vw;">
                 <p class="font-extralight text-gray-600 text-left w-[420px] mx-auto">Our portfolio of materials spans virtually every category, from metal and polymers to ceramics and composites, 
                     with premium innovations such as DuraChain™ 2-in-1 pot resins and Flexcera™. We're also driving upcycled materials such as wood into production.</p>
-                <div id="toggleButton" class="border border-[#FF3333] rounded-full text-[#FF3333] w-[40px] h-[40px] my-auto mx-auto text-[27px] font-thin hover:bg-[#FF3333] hover:text-white" 
+                <div id="toggleButton" class="plus border border-[#FF3333] rounded-full text-[#FF3333] w-[40px] h-[40px] my-auto mx-auto text-[27px] font-thin hover:bg-[#FF3333] hover:text-white" 
                 style="transition: background-color 0.3s ease-in-out;">+</div>
             </div>
-            
         </button>
-        <div class="border-b-[.1vw] border-gray-400 "></div>
-       <button class="py-[80px] flex">
+            <div class="panel grid grid-cols-2 gap-8">
+                <div class="font-extralight">
+                    <img src="/Images/Adaptive3d-sq-btn2-1st.jpg" class="bg-black">
+                    <p>Adaptive3D</p>
+                    <p>Founded in 2015 to develop high-performance 3D printable resins that deliver breakthrough material properties needed for end-use products. Creators of DuraChain™ 2-in-1 pot photopolymers.</p>
+                </div>
+                <div class="font-extralight">
+                    <img src="/Images/Forust-btn2-2nd.png" class="bg-black">
+                    <p>Forust</p>
+                    <p>Founded in 2019 to build a greener future through 3D printed wood derived from two waste streams: sawdust and lignin</p>
+                </div>
+            </div>
+
+       <button class="accordion py-[80px] flex border-t-[.1vw] border-b-[.1vw] border-gray-400">
             <div class="grid grid-cols-2" style="grid-template-columns: 5vw 30vw;">
                 <p class="text-[#fb4a4a] my-auto">_03</p>
                 <p class="font-extralight text-gray-800 text-[2.5vw] my-auto">Applications & Technologies</p>
             </div>
-            <div class="grid grid-cols-2" style="grid-template-columns:500px 10vw;">
+            <div class="plusDiv grid grid-cols-2" style="grid-template-columns:500px 10vw;">
                 <p class="font-extralight text-gray-600 text-left w-[420px] mx-auto">By pairing area-wide printers and the right materials with specific applications, we're going to change the world.</p>
-                <div id="toggleButton" class="border border-[#FF3333] rounded-full text-[#FF3333] w-[40px] h-[40px] my-auto mx-auto text-[27px] font-thin hover:bg-[#FF3333] hover:text-white" 
+                <div id="toggleButton" class="plus border border-[#FF3333] rounded-full text-[#FF3333] w-[40px] h-[40px] my-auto mx-auto text-[27px] font-thin hover:bg-[#FF3333] hover:text-white" 
                 style="transition: background-color 0.3s ease-in-out;">+</div>
             </div>
         </button>
-        <div class="border-b-[.1vw] border-gray-400 "></div>
+        <div class="panel grid grid-cols-2 gap-8">
+            <div class="font-extralight">
+                <img src="/Images/Aidro-ames-valve-no-bobine-btn3-1st.jpeg" class="bg-black">
+                <p>Aidro</p>
+                <p>Founded in 1982, Aidro designs and produces high-quality hydraulic components for the energy and aerospace industries, using 3D printing.</p>
+            </div>
+            <div class="font-extralight">
+                <img src="/Images/X1_DM_Desktop_Health_Capture0089_Flexcera_Base_cut_out-1-btn3-2nd.png" class="bg-black">
+                <p>Desktop Labs</p>
+                <p>Founded in 2021, Desktop Labs is driving production of dental products into the digital future for unparalleled efficiencies and customization for patients.</p>
+            </div>
+        </div>
+
     </section>
     <section class="p-12">
         <p class="text-gray-800 text-3xl font-extralight pb-10">Learn more</p>
@@ -182,7 +247,8 @@
             <div>
                 <a href="http://"><img src="./Images/Metal_Binder_Jet_Guide.jpg" class="h-[27.4vw] w-full"></a>
                 <p class="font-extralight mt-[25px] mb-[15px]">The Ultimate Guide to Laser-Free Metal 3D Printing with Binder Jetting Technology</p>
-                <p class="font-extralight text-gray-600 mb-[2.5vw]">This 40-page guide is the most authoritative introduction to date on metal binder jetting — the most promising ASTM-recognized 3D printing technology for the mass production of metal parts and products. 
+                <p class="font-extralight text-gray-600 mb-[2.5vw]">This 40-page guide is the most authoritative introduction to date on metal binder jetting — 
+                    the most promising ASTM-recognized 3D printing technology for the mass production of metal parts and products. 
                     This guide contains a comprehensive overview of high-speed 3D printing of metals without a laser. Explore why binder jetting holds the keys to enabling the next era of Additive Manufacturing 2.0, 
                     which can unlock the innovation, agility and sustainability benefits of 3D printing in meaningful high volumes.</p>
                 <a href="">
