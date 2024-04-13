@@ -8,6 +8,7 @@
     <link href="style.css" rel="stylesheet">
     <script src="index.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Desktop Metal. Define the future. Make it real. | Desktop Metal</title>
 </head>
 <body class="bg-[#f3f5f8] m-0 p-0 overflow-x-hidden max-w-[1900px] ">
@@ -18,7 +19,7 @@
             <button><img src="Icons/ellipsis-svg.svg" class="w-[20px] mx-[1vw]"></button>
         </header>
 
-        <nav class="flex py-5 px-[95px] justify-between bg-[#f3f5f8] bg-cover min-[800px]:visible max-[799px]:hidden">
+        <nav class="flex py-5 px-[95px] justify-between bg-[#f3f5f8] bg-cover min-[800px]:visible max-[999px]:hidden">
             <a href="#home" class="flex font-extrabold">
                 <img src="Images/dm_logo.png" class="w-[60px]">
                 <p>Desktop Metal</p>
@@ -58,9 +59,9 @@
             <button class="p-1 px-4 bg-[#FF3333] text-white font-thin rounded-3xl">Connect</button>
         </nav>
         <!-- For Mobile -->
-        <div class="flex justify-between">
-            <img src="Images/dm_logo.png" class="w-[60px] min-[800px]:hidden max-[799px]:visible">
-            <nav class="bg-[#f3f5f8] min-[800px]:hidden max-[799px]:visible">
+        <div class="flex">
+            <img src="Images/dm_logo.png" class="w-[60px] min-[1000px]:hidden max-[999px]:visible">
+            <nav class="bg-[#f3f5f8] min-[1000px]:hidden max-[999px]:visible">
                 <div id="mySidepanel" class="h-[250px] w-0 fixed z-[1] t-0 left-0 overflow-x-hidden transition-[0.5s]">
                     <a href="javascript:void(0)" class="closebtn absolute t-0 right-[25px] ml-[50px]" onclick="closeNav()">&times;</a>
                     <a href="#" id="home" class="font-thin transition-[0.3s] block">Platforms</a>
@@ -71,7 +72,7 @@
                     <a href="" class="font-thin transition-[0.3s] block">About</a>
                 </div>
             </nav>
-            <button class="openbtn min-[800px]:hidden max-[799px]:visible items-end flex" onclick="openNav()">&#9776;</button>
+            <button class="openbtn min-[1000px]:hidden max-[999px]:visible flex" onclick="openNav()">&#9776;</button>
         </div>
         <div id="nav-line" class="border-b-2 border-black mb-20 hidden"></div>
     </div>
@@ -83,7 +84,7 @@
     </section>
 <!-- Video code -->
 
-<div class="container">
+<div class="container bg-black max-[1000px]:w-[500px]">
     <div class="slides">
       <div class="slide">
         <video src="Videos/Production-_System_Printing_WEB-A_1728x1080_1st_Video.mp4" alt="" loop autoplay muted/>
@@ -109,52 +110,53 @@
   </div>
     
     <section class="pl-[3vw] w-full">
-        <p class="text-gray-800 text-[2.5vw] font-extralight pb-10 text-left">Key Stats</p>
-        <div class="flex border-t-[.1vw] border-b-[.1vw] border-gray-400 mx-auto">
-            <div class="w-1/2">
+        <p class="text-gray-800 text-[2.5vw] font-extralight py-10 text-left">Key Stats</p>
+        <div class="min-[1000px]:flex border-t-[.1vw] border-b-[.1vw] border-gray-400 mx-auto">
+            <div class="min-[1000px]:w-1/2">
                 <p class="pt-6 font-thin">_Vision Matters</p>
             </div>
-            <div class="border-l-[.1vw] border-gray-400 ">
-                <p class="pt-6 pb-8 pl-5 w-[35vw] text-gray-500 font-thin">Our Team DM portfolio of 3D printers, materials, applications, 
+            <div class="min-[1000px]:border-l-[.1vw] border-gray-400 ">
+                <p class="pt-6 pb-8 pl-5 min-[1000px]:w-[35vw] text-gray-500 font-thin">Our Team DM portfolio of 3D printers, materials, applications, 
                     and technologies was carefully curated to drive the future of Additive Manufacturing 2.0. 
                 Our team is passionate in the belief that production 3D printing can produce more advanced parts and products that can truly change the world at high, meaningful volumes.</p>
             </div>
         </div>
-        <div class="w-fit border-t-[.1vw] border-gray-400 border-b-[.1vw] text-[50px] text-gray-800 font-extralight leading-snug grid grid-cols-3" 
-        style="grid-template-columns: 400px 400px 400px;">
-            <div class="py-32 mx-auto px-[100px] border-r-[.1vw] border-gray-400">
+
+        <div class="min-[1000px]:w-fit border-t-[.1vw] border-gray-400 border-b-[.1vw] text-[50px] text-gray-800 font-extralight leading-snug grid min-[1000px]:grid-cols-3 max-[999px]:grid-cols-1" 
+        style="@media only screen and (min-width: 1000px){grid-template-columns: 400px 400px 400px}; @media only screen and (max-width: 999px){grid-template-columns: 5000px};
+        @media only screen and (max-width: 999px){grid-template-rows: 400px 400px 400px}">
+            <div class="min-[999px]:py-32 max-[1000px]:py-12 mx-auto min-[1000px]:px-[100px] max-[999px]:border-b-[.1vw] min-[1000px]:border-r-[.1vw] border-gray-400">
                 <p class="text-center">6,000+</p>
                 <p>Customers</p>
             </div>
-            <div class="py-32 mx-auto px-[150px] border-r-[.1vw] border-gray-400">
+            <div class="min-[999px]:py-32 max-[1000px]:py-12 mx-auto min-[1000px]:px-[150px] max-[999px]:border-b-[.1vw] min-[1000px]:border-r-[.1vw] border-gray-400">
                 <p class="text-center">650+</p>
                 <p>Patents</p>
             </div>
-            <div class="py-32 pl-[100px] mx-auto">
+            <div class="min-[999px]:py-32 max-[1000px]:py-12 mx-auto min-[1000px]:pl-[100px]">
                 <p class="text-center">250+</p>
                 <p>Materials</p>
             </div>
         </div>
-
     </section>
     
-    <section class="">
+    <section>
         <div>
-            <p class="font-extralight text-gray-800 text-[2.5vw] mb-[3vw] mt-[5vw]">Our Portfolio</p>
+            <p class="font-extralight text-gray-800 text-[2.5vw] mb-[3vw] min-[1000px]:mt-[5vw]">Our Portfolio</p>
         </div>
-            <button class="accordion py-[80px] w-full flex border-t-[.1vw] border-gray-400">
-                <div class="grid grid-cols-2" style="grid-template-columns: 5vw 30vw;">
+            <button class="accordion py-[80px] w-full min-[999px]:flex border-t-[.1vw] border-gray-400">
+                <div class="min-[1000px]:grid min-[1000px]:grid-cols-2" style="@media only screen and (min-width: 1000px){grid-template-columns: 5vw 30vw};">
                     <p class="text-[#fb4a4a] my-auto">_01</p>
-                    <p class="font-extralight text-gray-800 text-[2.5vw] my-auto">Platforms</p>
+                    <p class="font-extralight text-gray-800 min-[1000px]:text-[2.5vw] max-[999px]:text-[30px] my-auto">Platforms</p>
                 </div>
-                <div class="plusDiv grid grid-cols-2" style="grid-template-columns: 500px 10vw;">
+                <div class="plusDiv min-[1000px]:grid max-[999px]:flex min-[1000px]:grid-cols-2" style="@media only screen and (min-width: 1000px){grid-template-columns: 500px 10vw};">
                     <p class="font-extralight text-gray-600 text-left w-[420px] mx-auto">We're investing in area-wide 3D printing platforms, 
                         such as Binder Jetting (BJT) and Digital Light Processing (DLP), that we believe offer the speeds and costs required for AM 2.0</p>
                     <div id="toggleButton" class="plus border border-[#FF3333] rounded-full text-[#FF3333] w-[40px] h-[40px] my-auto mx-auto text-[27px] font-thin"
                     style="transition: background-color 0.3s ease-in-out;">+</div>
                 </div>
             </button>
-                <div class="panel grid grid-cols-4 gap-8">
+                <div class="panel grid min-[1000px]:grid-cols-4 max-[999px]:grid-cols-2 gap-8">
                     <div class="font-extralight">
                         <img src="Images/Production-System-btn1-1st.png" class="bg-black">
                         <p>Desktop Metal</p>
@@ -180,19 +182,19 @@
                     </div>
                 </div>
         
-        <button class="accordion py-[80px] flex border-t-[.1vw] border-gray-400">
-            <div class="grid grid-cols-2" style="grid-template-columns: 5vw 30vw;">
+        <button class="accordion py-[80px] min-[999px]:flex border-t-[.1vw] border-gray-400">
+            <div class="min-[1000px]:grid min-[1000px]:grid-cols-2" style="@media only screen and (min-width: 1000px){grid-template-columns: 5vw 30vw};">
                 <p class="text-[#fb4a4a] my-auto">_02</p>
-                <p class="font-extralight text-gray-800 text-[2.5vw] my-auto">Materials</p>
+                <p class="font-extralight text-gray-800 min-[1000px]:text-[2.5vw] max-[999px]:text-[30px] my-auto">Materials</p>
             </div>
-            <div class="plusDiv grid grid-cols-2" style="grid-template-columns: 500px 10vw;">
+            <div class="plusDiv min-[1000px]:grid max-[999px]:flex min-[1000px]:grid-cols-2" style="@media only screen and (min-width: 1000px){grid-template-columns: 500px 10vw};">
                 <p class="font-extralight text-gray-600 text-left w-[420px] mx-auto">Our portfolio of materials spans virtually every category, from metal and polymers to ceramics and composites, 
                     with premium innovations such as DuraChain™ 2-in-1 pot resins and Flexcera™. We're also driving upcycled materials such as wood into production.</p>
                 <div id="toggleButton" class="plus border border-[#FF3333] rounded-full text-[#FF3333] w-[40px] h-[40px] my-auto mx-auto text-[27px] font-thin hover:bg-[#FF3333] hover:text-white" 
                 style="transition: background-color 0.3s ease-in-out;">+</div>
             </div>
         </button>
-            <div class="panel grid grid-cols-2 gap-8">
+            <div class="panel grid max-[999px]:grid-cols-2 gap-8">
                 <div class="font-extralight">
                     <img src="Images/Adaptive3d-sq-btn2-1st.jpg" class="bg-black">
                     <p>Adaptive3D</p>
@@ -205,12 +207,12 @@
                 </div>
             </div>
 
-       <button class="accordion py-[80px] flex border-t-[.1vw] border-b-[.1vw] border-gray-400">
-            <div class="grid grid-cols-2" style="grid-template-columns: 5vw 30vw;">
+       <button class="accordion py-[80px] min-[999px]:flex border-t-[.1vw] border-b-[.1vw] border-gray-400">
+            <div class="min-[1000px]:grid min-[1000px]:grid-cols-2" style="@media only screen and (min-width: 1000px){grid-template-columns: 5vw 30vw};">
                 <p class="text-[#fb4a4a] my-auto">_03</p>
-                <p class="font-extralight text-gray-800 text-[2.5vw] my-auto">Applications & Technologies</p>
+                <p class="font-extralight text-gray-800 min-[1000px]:text-[2.5vw] max-[999px]:text-[30px] my-auto">Applications & Technologies</p>
             </div>
-            <div class="plusDiv grid grid-cols-2" style="grid-template-columns:500px 10vw;">
+            <div class="plusDiv min-[1000px]:grid max-[999px]:flex min-[1000px]:grid-cols-2" style="@media only screen and (min-width: 1000px){grid-template-columns: 500px 10vw};">
                 <p class="font-extralight text-gray-600 text-left w-[420px] mx-auto">By pairing area-wide printers and the right materials with specific applications, we're going to change the world.</p>
                 <div id="toggleButton" class="plus border border-[#FF3333] rounded-full text-[#FF3333] w-[40px] h-[40px] my-auto mx-auto text-[27px] font-thin hover:bg-[#FF3333] hover:text-white" 
                 style="transition: background-color 0.3s ease-in-out;">+</div>
@@ -233,19 +235,19 @@
     <section class="p-12">
         <p class="text-gray-800 text-3xl font-extralight pb-10">Learn more</p>
         <div class="border-b-[.1vw] border-gray-400"></div>
-        <div class="flex">
+        <div class="min-[1000px]:flex">
             <div class="w-1/2">
                 <p class="pt-6 font-thin">_Resources</p>
             </div>
-            <div class="border-l-[.1vw] border-gray-400 "></div>
+            <div class="min-[1000px]:border-l-[.1vw] border-gray-400 "></div>
             <div class="w-1/2">
-                <p class="pt-6 pb-8 pl-5 w-[500px] text-gray-500 font-thin">Learn more about Desktop Metal metal 3D printing systems, additive manufacturing applications, and case studies in our Resource Center</p>
+                <p class="pt-6 pb-8 min-[1000px]:pl-5 w-[500px] text-gray-500 font-thin">Learn more about Desktop Metal metal 3D printing systems, additive manufacturing applications, and case studies in our Resource Center</p>
             </div>
         </div>
         <div class="border-b-[.1vw] border-gray-400 "></div>
-        <div class="flex mt-[3vw]">
+        <div class="min-[1000px]:flex mt-[3vw]">
             <div>
-                <a href="http://"><img src="Images/Metal_Binder_Jet_Guide.jpg" class="h-[27.4vw] w-full"></a>
+                <a href="http://"><img src="Images/Metal_Binder_Jet_Guide.jpg" class="min-[1000px]:h-[27.4vw] w-full"></a>
                 <p class="font-extralight mt-[25px] mb-[15px]">The Ultimate Guide to Laser-Free Metal 3D Printing with Binder Jetting Technology</p>
                 <p class="font-extralight text-gray-600 mb-[2.5vw]">This 40-page guide is the most authoritative introduction to date on metal binder jetting — 
                     the most promising ASTM-recognized 3D printing technology for the mass production of metal parts and products. 
@@ -281,7 +283,7 @@
     <section class="bg-[#333]">
         <p class="text-gray-400 text-[29px] font-extralight mb-[1.5vw]">3D Printing Systems. <span class="text-white">Designed for every application.</span></p>
         <div class="border-b-[.1vw] border-gray-400 "></div>
-        <div class="grid grid-cols-4 gap-8 mt-[100px] text-white font-extralight">
+        <div class="grid grid-cols-4 gap-8 mt-[100px] text-white font-extralight max-[999px]:w-[900px] max-[999px]:overflow-x-scroll">
             <div>
                 <img src="Images/Product_Dark_Product_1080x1080.jpg" alt="">
                 <div class="flex justify-between my-4">
@@ -355,7 +357,7 @@
         </div>
         
     </section>
-    <section class="flex justify-between mt-[100px]">
+    <section class="min-[1000px]:flex justify-between mt-[100px]">
         <div>
             <img src="Images/dm_logo.png" alt="">
             <div class="mt-[100px]">
@@ -366,9 +368,9 @@
                 </div>
             </div>   
         </div>
-        <div class="grid grid-cols-4 font-extralight mr-[100px] mb-[200px]" style="grid-template-columns: 200px 200px 200px 200px;">
-            <div>
-                <p class="text-gray-500 mb-[50px]">Products</p>
+        <div class="max-[999px]:hidden grid min-[1000px]:grid-cols-4 max-[999px]:grid-cols-1 font-extralight mr-[100px] mb-[200px]" style="@media only screen and (min-width: 1000px){grid-template-columns: 200px 200px 200px 200px};">
+            <div class="">
+                <p class=" text-gray-500 max-[999px]:mb-[50px] max-[1000px]:mb-20">Products</p>
                 <div class="grid gap-2">
                     <a href="">Production System</a>
                     <a href="">X-Series</a>
@@ -378,9 +380,9 @@
                     <a href="">Support</a>
                 </div>
             </div>
-            <div>
-                <p class="text-gray-500 mb-[50px]">Industries</p>
-                <div class="grid gap-2">
+            <div class="">
+                <p class=" text-gray-500 max-[999px]:mb-[50px] max-[1000px]:mb-20">Industries</p>
+                <div class=" grid gap-2">
                     <a href="">Automotive</a>
                     <a href="">Consumer</a>
                     <a href="">Heavy Industry</a>
@@ -389,9 +391,9 @@
                     <a href="">Education</a>
                 </div class="grid">
             </div>
-            <div>
-                <p class="text-gray-500 mb-[50px]">Company</p>
-                <div class="grid gap-2">
+            <div class="">
+                <p class=" text-gray-500 max-[999px]:mb-[50px] max-[1000px]:mb-20">Company</p>
+                <div class=" grid gap-2">
                     <a href="">About Us</a>
                     <a href="">Careers</a>
                     <a href="">Press</a>
@@ -400,9 +402,9 @@
                     <a href="">Become a reseller</a>
                 </div>
             </div>
-            <div>
-                <p class="text-gray-500 mb-[50px]">Social</p>
-                <div class="grid gap-2">
+            <div class="">
+                <p class=" text-gray-500 max-[999px]:mb-[50px] max-[1000px]:mb-20">Social</p>
+                <div class=" grid gap-2">
                     <a href="">Twitter</a>
                     <a href="">Instagram</a>
                     <a href="">Youtube</a>
@@ -411,17 +413,65 @@
                 </div>
             </div>
         </div>
+
+        <!-- mobile view -->
+        <div class="min-[1000px]:hidden grid max-[999px]:grid-cols-1 font-extralight mr-[100px] mb-[50px]" style="@media only screen and (min-width: 1000px){grid-template-columns: 200px 200px 200px 200px};">
+            <div class="accordion">
+                <p class="accordion text-gray-500 max-[999px]:mb-[10px] border">Products</p>
+                <div class="panel grid gap-2">
+                    <a href="">Production System</a>
+                    <a href="">X-Series</a>
+                    <a href="">Shop Sytem</a>
+                    <a href="">Studio System</a>
+                    <a href="">Knowledge Base</a>
+                    <a href="">Support</a>
+                </div>
+            </div>
+            <div class="accordion">
+                <p class="accordion text-gray-500 max-[999px]:mb-[10px] border">Industries</p>
+                <div class="panel grid gap-2">
+                    <a href="">Automotive</a>
+                    <a href="">Consumer</a>
+                    <a href="">Heavy Industry</a>
+                    <a href="">Tooling</a>
+                    <a href="">Machine Design</a>
+                    <a href="">Education</a>
+                </div class="grid">
+            </div>
+            <div class="accordion">
+                <p class="accordion text-gray-500 max-[999px]:mb-[10px] border">Company</p>
+                <div class="panel grid gap-2">
+                    <a href="">About Us</a>
+                    <a href="">Careers</a>
+                    <a href="">Press</a>
+                    <a href="">Contact</a>
+                    <a href="">Events</a>
+                    <a href="">Become a reseller</a>
+                </div>
+            </div>
+            <div class="accordion">
+                <p class="accordion text-gray-500 max-[999px]:mb-[10px] border">Social</p>
+                <div class="panel grid gap-2">
+                    <a href="">Twitter</a>
+                    <a href="">Instagram</a>
+                    <a href="">Youtube</a>
+                    <a href="">Facebook</a>
+                    <a href="">Linkedln</a>
+                </div>
+            </div>
+        </div>
+
     </section>
     <div class="px-[25px]">
         <div class="border-b-[.1vw] border-gray-400"></div>
-        <div class="flex">
-            <div class="w-1/2 grid font-thin py-[40px]">
+        <div class="min-[1000px]:flex">
+            <div class="min-[1000px]:w-1/2 grid font-thin py-[40px]">
                 <p class="">© 2022 Desktop Metal, Inc.</p>
                 <a href="">63 Third Avenue — Burlington, MA 01803</a>
                 <a href="">(978) 224.1244</a>
                 <a href="">Terms + Conditions / Privacy Policy</a>
             </div>
-            <div class="border-l-[.1vw] border-gray-400 "></div>
+            <div class="min-[1000px]:border-l-[.1vw] border-gray-400 "></div>
             <div class="w-1/2">
             </div>
         </div>
